@@ -1,0 +1,15 @@
+- name: Auto-Formatter
+  uses: mezgoodle/auto-formatter@v1.0.10
+  
+  name: CI
+
+#Controls when the workflow will run
+on: 
+
+#Triggers the workflow on push or pull request events but for only the main branch
+  push:
+    branches: [main]
+  pull_request: 
+    branches: [main]
+# Allows you to run this workflow manually from the actions tab
+workflow_dispatch:
